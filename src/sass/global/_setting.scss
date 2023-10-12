@@ -17,10 +17,6 @@ $base-font-family: "'Noto Sans JP', sans-serif;";
 $title-font-family: "'Roboto', sans-serif;";
 // ※検証ツールでしっかり反映されているか確認する
 
-body {
-  font-family: $base-font-family;
-}
-
 // フォントウェイト
 $regular: 300;
 $normal: 400;
@@ -36,3 +32,9 @@ $white: #FFFFFF;
 $text-color: #333333;
 $background: #111111;
 $button-color: #FFEA2E;
+
+
+body {
+  font-family: $base-font-family;
+  background-color: $background;
+}

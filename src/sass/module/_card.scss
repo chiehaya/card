@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.card {
+    max-width: rem(350);
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.card:first-child::before {
+    content: "New";
+    text-align: center;
+    position: absolute;
+    display: block;
+    background-color: #FFBA6A;
+    width: rem(60);
+    height: rem(60);
+    line-height: rem(60);
+    top: rem(-16);
+    left: rem(-18);
+    border-radius: 50%;
+}
+
+
+.card__img {
+    aspect-ratio: 350 / 233;
+    // padding-top: 66.571429%; でも可
+    // 233/350*100
+    // position: relative;
+}
+
+.card__img img {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+    // // top0 left0 transform0 でも可
+    object-fit: cover;
+    // object-positionで位置を変えることもできる
+    width: 100%;
+    height: 100%;
+}
+
+.card__body {
+    padding: rem(7) rem(24) rem(16);
+    background-color: $white;
+}
+
+.card__title {
+    font-weight: $medium;
+    font-size: rem(18);
+    line-height: calc(35 / 18);
+    display: block;
+    letter-spacing: 0.06em;
+}
+
+.card__text {
+    margin-top: rem(4);
+    font-size: rem(14);
+    line-height: calc(26 / 14);
+    letter-spacing: 0.07em;
+}
+
+.card__info {
+    margin-top: rem(11);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

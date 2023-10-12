@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.label {
+    background-color: #FFEA2E;
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: rem(6) rem(5.2);
+    letter-spacing: 0.08em;
+    height: rem(25.4);
+    line-height: 1;
+}
+

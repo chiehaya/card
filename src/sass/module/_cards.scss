@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: rem(25);
+}

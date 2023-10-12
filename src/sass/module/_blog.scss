@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.blog__inner {
+    padding: 0 rem(25);
+    max-width: rem(1110);
+    width: 100%;
+    margin: auto;
+}
+
+.blog__title {
+    color: $white;
+    font-family: $title-font-family;
+    font-size: rem(40);
+    text-align: center;
+    font-weight: $regular;
+}
+
+.blog__items {
+    margin-top: rem(72);
+}
+
