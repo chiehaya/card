@@ -2,6 +2,14 @@
 
 .cards {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: rem(25);
+    // gap: rem(25);
+    // display: grid;
+    // grid-template-columns: repeat(3,1fr);
+    // gap: rem(25);
+}
+
+.cards__item {
+    width: calc((100% - 1.5625rem * 2) / 3);
 }
